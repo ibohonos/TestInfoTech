@@ -7,23 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A59048A2923CCED00EF7243 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904892923CCED00EF7243 /* City.swift */; };
+		7A59048F2923D11D00EF7243 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A59048E2923D11D00EF7243 /* NetworkManager.swift */; };
+		7A5904912923D1D600EF7243 /* city_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A5904902923D1D600EF7243 /* city_list.json */; };
+		7A5904992923EAAD00EF7243 /* CityScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904982923EAAD00EF7243 /* CityScreenModule.swift */; };
+		7A59049B2923EAB700EF7243 /* CityScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A59049A2923EAB700EF7243 /* CityScreenRouter.swift */; };
+		7A59049D2923EAC600EF7243 /* CityScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A59049C2923EAC600EF7243 /* CityScreenViewController.swift */; };
+		7A59049F2923EAD200EF7243 /* CityScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A59049E2923EAD200EF7243 /* CityScreenPresenter.swift */; };
+		7A5904A12923EAE100EF7243 /* CityScreenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904A02923EAE100EF7243 /* CityScreenDataSource.swift */; };
+		7A5904A32923EEBA00EF7243 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904A22923EEBA00EF7243 /* HTTPMethod.swift */; };
+		7A5904A62923EEE800EF7243 /* NetworkErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904A52923EEE800EF7243 /* NetworkErrorMessage.swift */; };
+		7A5904AA2923EF3000EF7243 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904A92923EF3000EF7243 /* BaseRequest.swift */; };
+		7A5904AD2923F25600EF7243 /* GetCityWeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904AC2923F25600EF7243 /* GetCityWeatherRequest.swift */; };
+		7A5904B02924058500EF7243 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904AF2924058500EF7243 /* String.swift */; };
+		7A5904B229241C9300EF7243 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904B129241C9300EF7243 /* Weather.swift */; };
+		7A5904C32925242E00EF7243 /* UIViewController+Universal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5904C22925242E00EF7243 /* UIViewController+Universal.swift */; };
 		7AE2C3772923B04A0014BEF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3762923B04A0014BEF1 /* AppDelegate.swift */; };
 		7AE2C3792923B04A0014BEF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3782923B04A0014BEF1 /* SceneDelegate.swift */; };
-		7AE2C37B2923B04A0014BEF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C37A2923B04A0014BEF1 /* ViewController.swift */; };
 		7AE2C37E2923B04A0014BEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2C37C2923B04A0014BEF1 /* Main.storyboard */; };
 		7AE2C3802923B04C0014BEF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2C37F2923B04C0014BEF1 /* Assets.xcassets */; };
 		7AE2C3832923B04C0014BEF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2C3812923B04C0014BEF1 /* LaunchScreen.storyboard */; };
+		7AE2C3952923B33F0014BEF1 /* CitiesScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3942923B33F0014BEF1 /* CitiesScreenRouter.swift */; };
+		7AE2C3972923B34D0014BEF1 /* CitiesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3962923B34D0014BEF1 /* CitiesScreenViewController.swift */; };
+		7AE2C3992923B3570014BEF1 /* CitiesScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3982923B3570014BEF1 /* CitiesScreenPresenter.swift */; };
+		7AE2C39B2923B36B0014BEF1 /* CitiesScreenDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C39A2923B36B0014BEF1 /* CitiesScreenDataSource.swift */; };
+		7AE2C39E2923B37A0014BEF1 /* CitiesScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C39D2923B37A0014BEF1 /* CitiesScreenModule.swift */; };
+		7AE2C3A22923B42C0014BEF1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3A12923B42C0014BEF1 /* BaseView.swift */; };
+		7AE2C3A42923B44C0014BEF1 /* ModuleInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3A32923B44C0014BEF1 /* ModuleInitializable.swift */; };
+		7AE2C3A62923B4710014BEF1 /* UIViewControllerPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3A52923B4710014BEF1 /* UIViewControllerPresentation.swift */; };
+		7AE2C3AA2923B4D00014BEF1 /* UIViewController+Wrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3A92923B4D00014BEF1 /* UIViewController+Wrapped.swift */; };
+		7AE2C3AC2923B4FC0014BEF1 /* UIWindow+ReplaceRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3AB2923B4FC0014BEF1 /* UIWindow+ReplaceRootViewController.swift */; };
+		7AE2C3AE2923B5240014BEF1 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3AD2923B5240014BEF1 /* UIView+Snapshot.swift */; };
+		7AE2C3B02923BFE40014BEF1 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3AF2923BFE40014BEF1 /* ReusableCell.swift */; };
+		7AE2C3B52923C0910014BEF1 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3B32923C0910014BEF1 /* CityTableViewCell.swift */; };
+		7AE2C3B62923C0910014BEF1 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AE2C3B42923C0910014BEF1 /* CityTableViewCell.xib */; };
+		7AE2C3BA2923C3210014BEF1 /* ImageFromWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE2C3B92923C3210014BEF1 /* ImageFromWeb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A5904892923CCED00EF7243 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		7A59048E2923D11D00EF7243 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		7A5904902923D1D600EF7243 /* city_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city_list.json; sourceTree = "<group>"; };
+		7A5904982923EAAD00EF7243 /* CityScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScreenModule.swift; sourceTree = "<group>"; };
+		7A59049A2923EAB700EF7243 /* CityScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScreenRouter.swift; sourceTree = "<group>"; };
+		7A59049C2923EAC600EF7243 /* CityScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScreenViewController.swift; sourceTree = "<group>"; };
+		7A59049E2923EAD200EF7243 /* CityScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScreenPresenter.swift; sourceTree = "<group>"; };
+		7A5904A02923EAE100EF7243 /* CityScreenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityScreenDataSource.swift; sourceTree = "<group>"; };
+		7A5904A22923EEBA00EF7243 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		7A5904A52923EEE800EF7243 /* NetworkErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorMessage.swift; sourceTree = "<group>"; };
+		7A5904A92923EF3000EF7243 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		7A5904AC2923F25600EF7243 /* GetCityWeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCityWeatherRequest.swift; sourceTree = "<group>"; };
+		7A5904AF2924058500EF7243 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		7A5904B129241C9300EF7243 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		7A5904C22925242E00EF7243 /* UIViewController+Universal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Universal.swift"; sourceTree = "<group>"; };
 		7AE2C3732923B04A0014BEF1 /* TestInfoTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestInfoTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE2C3762923B04A0014BEF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE2C3782923B04A0014BEF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7AE2C37A2923B04A0014BEF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AE2C37D2923B04A0014BEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AE2C37F2923B04C0014BEF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE2C3822923B04C0014BEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE2C3842923B04C0014BEF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AE2C3942923B33F0014BEF1 /* CitiesScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesScreenRouter.swift; sourceTree = "<group>"; };
+		7AE2C3962923B34D0014BEF1 /* CitiesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesScreenViewController.swift; sourceTree = "<group>"; };
+		7AE2C3982923B3570014BEF1 /* CitiesScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesScreenPresenter.swift; sourceTree = "<group>"; };
+		7AE2C39A2923B36B0014BEF1 /* CitiesScreenDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesScreenDataSource.swift; sourceTree = "<group>"; };
+		7AE2C39D2923B37A0014BEF1 /* CitiesScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesScreenModule.swift; sourceTree = "<group>"; };
+		7AE2C3A12923B42C0014BEF1 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		7AE2C3A32923B44C0014BEF1 /* ModuleInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInitializable.swift; sourceTree = "<group>"; };
+		7AE2C3A52923B4710014BEF1 /* UIViewControllerPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPresentation.swift; sourceTree = "<group>"; };
+		7AE2C3A92923B4D00014BEF1 /* UIViewController+Wrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Wrapped.swift"; sourceTree = "<group>"; };
+		7AE2C3AB2923B4FC0014BEF1 /* UIWindow+ReplaceRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+ReplaceRootViewController.swift"; sourceTree = "<group>"; };
+		7AE2C3AD2923B5240014BEF1 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		7AE2C3AF2923BFE40014BEF1 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		7AE2C3B32923C0910014BEF1 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		7AE2C3B42923C0910014BEF1 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		7AE2C3B92923C3210014BEF1 /* ImageFromWeb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromWeb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +95,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A59048B2923CE7900EF7243 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904902923D1D600EF7243 /* city_list.json */,
+				7AE2C37F2923B04C0014BEF1 /* Assets.xcassets */,
+				7AE2C3842923B04C0014BEF1 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A59048C2923D0D900EF7243 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7A59048D2923D10C00EF7243 /* Manager */,
+				7A5904A42923EED300EF7243 /* Errors */,
+				7A5904A72923EF0E00EF7243 /* Requests */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7A59048D2923D10C00EF7243 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7A59048E2923D11D00EF7243 /* NetworkManager.swift */,
+				7A5904A22923EEBA00EF7243 /* HTTPMethod.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7A5904922923EA6000EF7243 /* CityScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904982923EAAD00EF7243 /* CityScreenModule.swift */,
+				7A5904972923EA8800EF7243 /* DataSource */,
+				7A5904962923EA8200EF7243 /* Model */,
+				7A5904952923EA7B00EF7243 /* Presenter */,
+				7A5904942923EA7400EF7243 /* View */,
+				7A5904932923EA6B00EF7243 /* Router */,
+			);
+			path = CityScreen;
+			sourceTree = "<group>";
+		};
+		7A5904932923EA6B00EF7243 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7A59049A2923EAB700EF7243 /* CityScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7A5904942923EA7400EF7243 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7A59049C2923EAC600EF7243 /* CityScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7A5904952923EA7B00EF7243 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7A59049E2923EAD200EF7243 /* CityScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7A5904962923EA8200EF7243 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904B129241C9300EF7243 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7A5904972923EA8800EF7243 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904A02923EAE100EF7243 /* CityScreenDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7A5904A42923EED300EF7243 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904A52923EEE800EF7243 /* NetworkErrorMessage.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		7A5904A72923EF0E00EF7243 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904AB2923F22E00EF7243 /* Main */,
+				7A5904A82923EF2100EF7243 /* BaseRequests */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		7A5904A82923EF2100EF7243 /* BaseRequests */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904A92923EF3000EF7243 /* BaseRequest.swift */,
+			);
+			path = BaseRequests;
+			sourceTree = "<group>";
+		};
+		7A5904AB2923F22E00EF7243 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904AC2923F25600EF7243 /* GetCityWeatherRequest.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7A5904AE2924057400EF7243 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904AF2924058500EF7243 /* String.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		7AE2C36A2923B04A0014BEF1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +237,169 @@
 		7AE2C3752923B04A0014BEF1 /* TestInfoTech */ = {
 			isa = PBXGroup;
 			children = (
-				7AE2C3762923B04A0014BEF1 /* AppDelegate.swift */,
-				7AE2C3782923B04A0014BEF1 /* SceneDelegate.swift */,
-				7AE2C37A2923B04A0014BEF1 /* ViewController.swift */,
-				7AE2C37C2923B04A0014BEF1 /* Main.storyboard */,
-				7AE2C37F2923B04C0014BEF1 /* Assets.xcassets */,
-				7AE2C3812923B04C0014BEF1 /* LaunchScreen.storyboard */,
-				7AE2C3842923B04C0014BEF1 /* Info.plist */,
+				7AE2C38B2923B1150014BEF1 /* Application */,
+				7AE2C39F2923B3E70014BEF1 /* Core */,
+				7AE2C38C2923B1340014BEF1 /* Flows */,
+				7AE2C38A2923B0F70014BEF1 /* Storyboards */,
+				7A59048B2923CE7900EF7243 /* Resources */,
 			);
 			path = TestInfoTech;
+			sourceTree = "<group>";
+		};
+		7AE2C38A2923B0F70014BEF1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C37C2923B04A0014BEF1 /* Main.storyboard */,
+				7AE2C3812923B04C0014BEF1 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7AE2C38B2923B1150014BEF1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3762923B04A0014BEF1 /* AppDelegate.swift */,
+				7AE2C3782923B04A0014BEF1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		7AE2C38C2923B1340014BEF1 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C38D2923B2C10014BEF1 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		7AE2C38D2923B2C10014BEF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904922923EA6000EF7243 /* CityScreen */,
+				7AE2C38E2923B2CC0014BEF1 /* CitiesScreen */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7AE2C38E2923B2CC0014BEF1 /* CitiesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C39D2923B37A0014BEF1 /* CitiesScreenModule.swift */,
+				7AE2C3932923B32A0014BEF1 /* DataSource */,
+				7AE2C3922923B3240014BEF1 /* Model */,
+				7AE2C3912923B3120014BEF1 /* Presenter */,
+				7AE2C3902923B30D0014BEF1 /* View */,
+				7AE2C38F2923B3030014BEF1 /* Router */,
+			);
+			path = CitiesScreen;
+			sourceTree = "<group>";
+		};
+		7AE2C38F2923B3030014BEF1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3942923B33F0014BEF1 /* CitiesScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7AE2C3902923B30D0014BEF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3B12923C0360014BEF1 /* Subviews */,
+				7AE2C3962923B34D0014BEF1 /* CitiesScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7AE2C3912923B3120014BEF1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3982923B3570014BEF1 /* CitiesScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7AE2C3922923B3240014BEF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904892923CCED00EF7243 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AE2C3932923B32A0014BEF1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C39A2923B36B0014BEF1 /* CitiesScreenDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		7AE2C39F2923B3E70014BEF1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7A59048C2923D0D900EF7243 /* Network */,
+				7AE2C3B82923C3030014BEF1 /* ImageFromWeb */,
+				7AE2C3A72923B4B50014BEF1 /* Extensions */,
+				7AE2C3A02923B3FA0014BEF1 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7AE2C3A02923B3FA0014BEF1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3A12923B42C0014BEF1 /* BaseView.swift */,
+				7AE2C3A32923B44C0014BEF1 /* ModuleInitializable.swift */,
+				7AE2C3A52923B4710014BEF1 /* UIViewControllerPresentation.swift */,
+				7AE2C3AF2923BFE40014BEF1 /* ReusableCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7AE2C3A72923B4B50014BEF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A5904AE2924057400EF7243 /* Foundation */,
+				7AE2C3A82923B4C00014BEF1 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7AE2C3A82923B4C00014BEF1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3A92923B4D00014BEF1 /* UIViewController+Wrapped.swift */,
+				7AE2C3AB2923B4FC0014BEF1 /* UIWindow+ReplaceRootViewController.swift */,
+				7AE2C3AD2923B5240014BEF1 /* UIView+Snapshot.swift */,
+				7A5904C22925242E00EF7243 /* UIViewController+Universal.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		7AE2C3B12923C0360014BEF1 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3B22923C06F0014BEF1 /* CityTableViewCell */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7AE2C3B22923C06F0014BEF1 /* CityTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3B32923C0910014BEF1 /* CityTableViewCell.swift */,
+				7AE2C3B42923C0910014BEF1 /* CityTableViewCell.xib */,
+			);
+			path = CityTableViewCell;
+			sourceTree = "<group>";
+		};
+		7AE2C3B82923C3030014BEF1 /* ImageFromWeb */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2C3B92923C3210014BEF1 /* ImageFromWeb.swift */,
+			);
+			path = ImageFromWeb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +462,8 @@
 			files = (
 				7AE2C3832923B04C0014BEF1 /* LaunchScreen.storyboard in Resources */,
 				7AE2C3802923B04C0014BEF1 /* Assets.xcassets in Resources */,
+				7A5904912923D1D600EF7243 /* city_list.json in Resources */,
+				7AE2C3B62923C0910014BEF1 /* CityTableViewCell.xib in Resources */,
 				7AE2C37E2923B04A0014BEF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +475,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE2C37B2923B04A0014BEF1 /* ViewController.swift in Sources */,
+				7A59048F2923D11D00EF7243 /* NetworkManager.swift in Sources */,
+				7A5904A12923EAE100EF7243 /* CityScreenDataSource.swift in Sources */,
+				7AE2C39B2923B36B0014BEF1 /* CitiesScreenDataSource.swift in Sources */,
+				7A59048A2923CCED00EF7243 /* City.swift in Sources */,
+				7AE2C39E2923B37A0014BEF1 /* CitiesScreenModule.swift in Sources */,
+				7AE2C3952923B33F0014BEF1 /* CitiesScreenRouter.swift in Sources */,
+				7AE2C3972923B34D0014BEF1 /* CitiesScreenViewController.swift in Sources */,
+				7AE2C3BA2923C3210014BEF1 /* ImageFromWeb.swift in Sources */,
+				7A5904B229241C9300EF7243 /* Weather.swift in Sources */,
+				7A59049F2923EAD200EF7243 /* CityScreenPresenter.swift in Sources */,
+				7A59049B2923EAB700EF7243 /* CityScreenRouter.swift in Sources */,
+				7AE2C3B02923BFE40014BEF1 /* ReusableCell.swift in Sources */,
+				7AE2C3A62923B4710014BEF1 /* UIViewControllerPresentation.swift in Sources */,
+				7A5904992923EAAD00EF7243 /* CityScreenModule.swift in Sources */,
+				7AE2C3AE2923B5240014BEF1 /* UIView+Snapshot.swift in Sources */,
+				7A5904A62923EEE800EF7243 /* NetworkErrorMessage.swift in Sources */,
 				7AE2C3772923B04A0014BEF1 /* AppDelegate.swift in Sources */,
+				7AE2C3A22923B42C0014BEF1 /* BaseView.swift in Sources */,
+				7AE2C3AA2923B4D00014BEF1 /* UIViewController+Wrapped.swift in Sources */,
+				7A5904B02924058500EF7243 /* String.swift in Sources */,
 				7AE2C3792923B04A0014BEF1 /* SceneDelegate.swift in Sources */,
+				7AE2C3AC2923B4FC0014BEF1 /* UIWindow+ReplaceRootViewController.swift in Sources */,
+				7AE2C3992923B3570014BEF1 /* CitiesScreenPresenter.swift in Sources */,
+				7A5904A32923EEBA00EF7243 /* HTTPMethod.swift in Sources */,
+				7A59049D2923EAC600EF7243 /* CityScreenViewController.swift in Sources */,
+				7A5904AD2923F25600EF7243 /* GetCityWeatherRequest.swift in Sources */,
+				7A5904C32925242E00EF7243 /* UIViewController+Universal.swift in Sources */,
+				7AE2C3B52923C0910014BEF1 /* CityTableViewCell.swift in Sources */,
+				7A5904AA2923EF3000EF7243 /* BaseRequest.swift in Sources */,
+				7AE2C3A42923B44C0014BEF1 /* ModuleInitializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +653,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FC5DQPG9SA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestInfoTech/Info.plist;
+				INFOPLIST_FILE = TestInfoTech/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +681,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FC5DQPG9SA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestInfoTech/Info.plist;
+				INFOPLIST_FILE = TestInfoTech/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cities Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CitiesScreenViewController" id="BYZ-38-t0r" customClass="CitiesScreenViewController" customModule="TestInfoTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zRX-eM-vug">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zRX-eM-vug" secondAttribute="trailing" id="0Ob-dI-dSE"/>
+                            <constraint firstItem="zRX-eM-vug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="721-ea-SXy"/>
+                            <constraint firstAttribute="bottom" secondItem="zRX-eM-vug" secondAttribute="bottom" id="eJ8-NY-3XO"/>
+                            <constraint firstItem="zRX-eM-vug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gEK-Lk-xX0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTableView" destination="zRX-eM-vug" id="Zrj-cb-fgg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.00763358778624" y="-2.1126760563380285"/>
+        </scene>
+        <!--City Screen View Controller-->
+        <scene sceneID="bAx-bv-oEc">
+            <objects>
+                <viewController storyboardIdentifier="CityScreenViewController" id="dYq-zd-aLU" customClass="CityScreenViewController" customModule="TestInfoTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OF5-gP-uys">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNc-9A-fLH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="teZ-bQ-E77"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1KH-Ow-PW0">
+                                <rect key="frame" x="0.0" y="370" width="393" height="482"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xG2-gH-Ejw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pNc-9A-fLH" firstAttribute="top" secondItem="OF5-gP-uys" secondAttribute="top" id="3cR-0e-nCE"/>
+                            <constraint firstItem="pNc-9A-fLH" firstAttribute="trailing" secondItem="xG2-gH-Ejw" secondAttribute="trailing" id="SLb-lQ-qSv"/>
+                            <constraint firstItem="xG2-gH-Ejw" firstAttribute="trailing" secondItem="1KH-Ow-PW0" secondAttribute="trailing" id="YLk-Pn-uel"/>
+                            <constraint firstItem="1KH-Ow-PW0" firstAttribute="leading" secondItem="xG2-gH-Ejw" secondAttribute="leading" id="bgA-Bp-jfw"/>
+                            <constraint firstItem="1KH-Ow-PW0" firstAttribute="top" secondItem="pNc-9A-fLH" secondAttribute="bottom" id="cBb-di-9Na"/>
+                            <constraint firstAttribute="bottom" secondItem="1KH-Ow-PW0" secondAttribute="bottom" id="k3n-lp-g1J"/>
+                            <constraint firstItem="pNc-9A-fLH" firstAttribute="leading" secondItem="xG2-gH-Ejw" secondAttribute="leading" id="rvg-bl-cjg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityMapKit" destination="pNc-9A-fLH" id="gya-TR-DEY"/>
+                        <outlet property="cityMapKitHeightConstraint" destination="teZ-bQ-E77" id="DMK-m5-kxo"/>
+                        <outlet property="contentTableView" destination="1KH-Ow-PW0" id="kEB-Mm-Uen"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqy-gP-uek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139.6946564885495" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
